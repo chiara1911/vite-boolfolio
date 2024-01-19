@@ -31,9 +31,9 @@ export default {
   methods: {
     getAllCategories() {
       axios.get(store.apiUrl + "/categories").then((resp) => {
-        console.log(resp.data);
+        // console.log(resp.data);
         this.categories = resp.data.results.data;
-        console.log(resp.data.results.data);
+        // console.log(resp.data.results.data);
       });
     },
   },
