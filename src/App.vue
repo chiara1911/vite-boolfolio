@@ -47,8 +47,14 @@ lastPage: 0,
 
 <template>
 <ul>
-  <li v-for="project in projects" :key="project.id">
-    {{ project.title }}
+  <li v-for="project in projects" :key="project.slug">
+    <div>
+<p> {{ project.title }}</p>
+<p> {{ project.description }}</p>
+
+<a href="#">{{ project.link }}</a>
+    </div>
+   
   </li>
 
 </ul>
