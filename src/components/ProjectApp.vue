@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="container">
     <ul class="card">
       <li v-for="project in projects" :key="project.slug" class="card-header">
         <div class="card-body">
           <p>{{ project.title }}</p>
           <p>{{ project.description }}</p>
-          <p>{{ project.technologies }}</p>
+          
           <a href="#">{{ project.link }}</a>
         </div>
       </li>
     </ul>
+    <button @click="nextPage">avanti</button>
+  <button @click="previousPage">indietro</button>
   </div>
 </template>
 

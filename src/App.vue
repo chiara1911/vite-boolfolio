@@ -1,7 +1,7 @@
 <template>
+<HeaderComponent/>
   <ProjectApp/>
-  <button @click="nextPage">avanti</button>
-  <button @click="previousPage">indietro</button>
+
   
   
   </template>
@@ -13,16 +13,19 @@
 // import 
 import {store} from "./data/store";
 import ProjectApp from "./components/ProjectApp.vue";
+import HeaderComponent from "./components/header/HeaderComponent.vue";
 
 export default{
  
   name: 'App',
   components: {
     ProjectApp,
+   HeaderComponent,
   },
   data(){
     return{
-      store,          
+      store, 
+            
     }
   }, 
   }
