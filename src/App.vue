@@ -1,6 +1,10 @@
 <template>
 <HeaderComponent/>
+<main>
   <ProjectApp/>
+<TechComponent/>
+</main>
+
 
   
   
@@ -12,16 +16,20 @@
 
 // import 
 import {store} from "./data/store";
-import ProjectApp from "./components/ProjectApp.vue";
+import ProjectApp from "./components/main/ProjectApp.vue";
 import HeaderComponent from "./components/header/HeaderComponent.vue";
+import TechComponent from "./components/main/TechComponent.vue";
+
 
 export default{
  
   name: 'App',
   components: {
     ProjectApp,
-   HeaderComponent,
-  },
+    HeaderComponent,
+    TechComponent,
+ 
+},
   data(){
     return{
       store, 

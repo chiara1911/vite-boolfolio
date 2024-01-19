@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <ul class="card">
+    
+    <ul class="card mt-4">
+      <h3 class="card-head">Progetti</h3>
       <li v-for="project in projects" :key="project.slug" class="card-header">
         <div class="card-body">
           <p>{{ project.title }}</p>
@@ -16,7 +18,7 @@
 </template>
 
 <script>
-import  {store} from "../data/store";
+import  {store} from "../../data/store";
 import axios from "axios";
 export default {
   name: "ProjectApp",
