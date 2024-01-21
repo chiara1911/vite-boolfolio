@@ -15,11 +15,31 @@
       </li>
     </ul>
   </div>
+  <div>
+    <!-- <carousel :items-to-show="1.5">
+    <slide v-for="technology in technologies" :key="slide">
+      <div class="card-body"  v-for="technology in technologies"
+        :key="technology.slug">
+          <a :href="'technology.{id}.show'"
+            ><p>{{ technology.name }}</p></a
+          >
+        </div>
+    </slide> -->
+
+    <!-- <template #addons>
+      <navigation />
+      <pagination />
+    </template> -->
+  <!-- </carousel> -->
+  </div>
 </template>
 
 <script>
+
 import { store } from "../../data/store";
 import axios from "axios";
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 export default {
   name: "TechComponent",
   data() {
@@ -27,7 +47,13 @@ export default {
       store,
 
       technologies: [],
-    };
+    };    
+  },
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
   },
   methods: {
     getAllTechnologies() {
