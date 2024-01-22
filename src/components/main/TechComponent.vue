@@ -60,7 +60,7 @@ export default {
       axios.get(store.apiUrl + "/technologies").then((resp) => {
         // console.log( resp.data)
         this.technologies = resp.data.results.data;
-        console.log(resp.data.results.data);
+        // console.log(resp.data.results.data);
         // this.currentPage = resp.data.results.current_page;
         // this.lastPage = resp.data.results.last_page;
       });
