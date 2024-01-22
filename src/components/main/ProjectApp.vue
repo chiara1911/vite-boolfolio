@@ -32,7 +32,7 @@ export default {
   },
   methods:{
     getAllProjects(){
-      axios.get(store.apiUrl + "/projects", {params:{page: this.currentPage}}).then((resp)=>{
+      axios.get(store.apiUrl + "/projects/", {params:{page: this.currentPage}}).then((resp)=>{
         console.log(resp.data);
         this.projects = resp.data.results.data;
         this.currentPage = resp.data.results.current_page;

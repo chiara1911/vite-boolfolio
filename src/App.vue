@@ -3,6 +3,7 @@
   <main>
     <div class="container">
       <SlideComponent/>
+      <router-view></router-view>
       <div class="row">
         <div class="col-6">
           <!-- <ProjectApp /> -->
@@ -31,6 +32,9 @@ import HeaderComponent from "./components/header/HeaderComponent.vue";
 import TechComponent from "./components/main/TechComponent.vue";
 import CategoryComponent from "./components/main/CategoryComponent.vue";
 import SlideComponent from "./components/main/SlideComponent.vue";
+import AppHeader from "./components/header/AppHeader.vue";
+import {createRouter, createWebHistory } from "vue-router";
+import AppHome from './assets/pages/AppHome.vue';
 
 
 export default {
@@ -40,7 +44,8 @@ export default {
     HeaderComponent,
     TechComponent,
     CategoryComponent,
-    SlideComponent
+    SlideComponent,
+    AppHeader
 },
   data() {
     return {

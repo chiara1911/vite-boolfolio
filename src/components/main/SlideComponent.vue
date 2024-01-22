@@ -46,6 +46,7 @@ export default {
     getAllProjects() {
       axios.get(store.apiUrl + "/projects").then((resp) => {
         //  console.log( 'resp.data'+ resp.data)
+        console.log(store.apiUrl + "/projects")
         this.projects = resp.data.results.data;
         console.log(resp.data.results.data);
       });
