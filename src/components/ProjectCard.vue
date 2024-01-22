@@ -3,7 +3,7 @@
         <div class="container">
         <div class="row">
           <div class="col-7">
-            <img :src="project.image" :alt="project.title" />
+            <!-- <img :src="project.image" :alt="project.title" /> -->
           </div>
           <div class="col-5">
             <a href="#"
@@ -25,25 +25,25 @@ import axios from "axios";
         data() {
     return {
       store,
-      projects: [],
+     props:['project'],
     };
   },
   components: {
   
   },
   methods: {
-    getAllProjects() {
-      axios.get(store.apiUrl + "/projects").then((resp) => {
-        //  console.log( 'resp.data'+ resp.data)
-        // console.log(store.apiUrl + "/projects");
-        this.projects = resp.data.results.data;
-        // console.log(resp.data.results.data);
-      });
-    },
+    // getAllProjects() {
+    //   axios.get(store.apiUrl + "/projects").then((resp) => {
+    //     //  console.log( 'resp.data'+ resp.data)
+    //     // console.log(store.apiUrl + "/projects");
+    //     this.projects = resp.data.results.data;
+    //     // console.log(resp.data.results.data);
+    //   });
+    // },
   },
-  mounted() {
-    this.getAllProjects();
-  },
+//   mounted() {
+//     this.getAllProjects();
+//   },
 }
 </script>
 

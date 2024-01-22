@@ -1,7 +1,7 @@
 <template>
   <carousel class="mt-3">
     <slide v-for="project in projects" :key="project.slug">
-      <ProjectCard/>
+      <ProjectCard :project="project"/>
     </slide>
   </carousel>
 </template>
@@ -24,13 +24,14 @@ export default {
   components: {
     Carousel,
     Slide,
+    ProjectCard
   },
   methods: {
     getAllProjects() {
       axios.get(store.apiUrl + "/projects").then((resp) => {
-        //  console.log( 'resp.data'+ resp.data)
+         console.log( resp.data)
         // console.log(store.apiUrl + "/projects");
-        this.projects = resp.data.results.data;
+        // this.projects = resp.data.results.data;
         // console.log(resp.data.results.data);
       });
     },
