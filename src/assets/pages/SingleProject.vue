@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       store,
-    //   project: null,
+     project: null,
     };
   },
   methods: {

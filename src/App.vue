@@ -2,25 +2,22 @@
   <HeaderComponent />
   <main>
     <div class="container">
-      <SlideComponent/>
+      <SlideComponent />
       <router-view></router-view>
       <div class="row">
         <div class="col-6">
           <!-- <ProjectApp /> -->
           <TechComponent />
-         
         </div>
         <!-- <div class="col-6">
           <div class="row">
             <div class="col-6"></div> -->
-          <div class="col-6">
+        <div class="col-6">
           <CategoryComponent />
-          </div>
-       
-          
         </div>
+      </div>
       <!-- </div>-->
-     </div>  
+    </div>
   </main>
 </template>
 
@@ -33,9 +30,8 @@ import TechComponent from "./components/main/TechComponent.vue";
 import CategoryComponent from "./components/main/CategoryComponent.vue";
 import SlideComponent from "./components/main/SlideComponent.vue";
 import AppHeader from "./components/header/AppHeader.vue";
-import {createRouter, createWebHistory } from "vue-router";
-import AppHome from './assets/pages/AppHome.vue';
-
+import { createRouter, createWebHistory } from "vue-router";
+import AppHome from "./assets/pages/AppHome.vue";
 
 export default {
   name: "App",
@@ -45,8 +41,8 @@ export default {
     TechComponent,
     CategoryComponent,
     SlideComponent,
-    AppHeader
-},
+    AppHeader,
+  },
   data() {
     return {
       store,
