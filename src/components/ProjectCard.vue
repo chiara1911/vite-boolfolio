@@ -5,10 +5,12 @@
         <img :src="project.image" :alt="project.title" />
       </div>
       <div class="col-5">
-        <a href="#"
-          ><p>{{ project.title }}</p></a
-        >
+        <router-link :to="{name: 'single-project', params:{slug:project.slug}}">
+            <p>{{ project.title }}</p>
+        </router-link>
+        
         <p>{{ project.description }}</p>
+
         <a href="#">{{ project.link }}</a>
       </div>
     </div>
@@ -29,6 +31,7 @@ export default {
     };
   },
   props: ["project"],
+  
   components: {},
   methods: {
     getAllProjects() {

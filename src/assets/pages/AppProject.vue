@@ -6,6 +6,7 @@
 
     </li> -->
     <li v-for = "project in store.project">
+        
 
     </li>
 </ul>
@@ -16,7 +17,7 @@
 
 import {store} from '../../data/store.js';
 import axios from 'axios';
-    export default {
+    export default { 
         name:'AppProject',
         data(){
             return {
@@ -28,8 +29,10 @@ import axios from 'axios';
                 axios.get(this.store.apiUrl + '/projects').then((res)=>{
                     console.log(res.data);
                     this.store.projects = res.data.results.data;
-                }
-            )}
+                }).catch((err)=>{
+
+                })
+            }
         }
     }
 </script>

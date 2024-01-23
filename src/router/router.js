@@ -22,12 +22,12 @@ const router = createRouter({
       name: 'single-project',
       component: SingleProject
     },
-    // {
-    //   path: "/:pathMatch(.*)*",
-    //   name :"not-found",
-    //   component: NotFound
+    {
+      path: "/:pathMatch(.*)*",
+      name :"not-found",
+      component: NotFound
 
-    // }
+    }
    
     // {
     //   path: '/about',
