@@ -1,12 +1,13 @@
 <template>
     <div>
-<h1>hello</h1>
+<h1>Questa sono io</h1>
+<span>descrizione</span>
     </div>
 </template>
 
 <script>
 
-import {store} from '../../data/store.js'
+
     export default {
         name: 'AppHome',
         data(){

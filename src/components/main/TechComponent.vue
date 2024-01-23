@@ -15,23 +15,7 @@
       </li>
     </ul>
   </div>
-  <div>
-    <!-- <carousel :items-to-show="1.5">
-    <slide v-for="technology in technologies" :key="slide">
-      <div class="card-body"  v-for="technology in technologies"
-        :key="technology.slug">
-          <a :href="'technology.{id}.show'"
-            ><p>{{ technology.name }}</p></a
-          >
-        </div>
-    </slide> -->
-
-    <!-- <template #addons>
-      <navigation />
-      <pagination />
-    </template> -->
-  <!-- </carousel> -->
-  </div>
+  
 </template>
 
 <script>

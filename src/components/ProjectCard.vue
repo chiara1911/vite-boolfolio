@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    
     <div class="row">
       <div class="col-7">
         <img :src="project.image" :alt="project.title" />
@@ -15,13 +16,14 @@
       </div>
     </div>
   </div>
-  <h1>project</h1>
+ 
   <!-- <p >progetto {{ project.title }}</p> -->
 </template>
 
 <script>
 import { store } from "../data/store";
 import axios from "axios";
+
 export default {
   name: "ProjectCard",
   data() {
@@ -32,7 +34,9 @@ export default {
   },
   props: ["project"],
   
-  components: {},
+  components: {
+
+  },
   methods: {
     getAllProjects() {
       //    console.log('pippo')

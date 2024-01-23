@@ -2,6 +2,7 @@
   <carousel class="mt-3">
     <slide v-for="project in projects" :key="project.id">
       <ProjectCard :project="project" />
+      
     </slide>
   </carousel>
 </template>
@@ -11,7 +12,7 @@ import { store } from "../../data/store";
 import axios from "axios";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
-import ProjectCard from "../ProjectCard.vue";
+ import ProjectCard from "../ProjectCard.vue";
 export default {
   name: "SlideComponent",
   data() {
@@ -24,7 +25,7 @@ export default {
   components: {
     Carousel,
     Slide,
-    ProjectCard,
+     ProjectCard,
   },
   methods: {
     getAllProjects() {
@@ -36,7 +37,7 @@ export default {
   mounted() {
     this.getAllProjects();
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

@@ -11,28 +11,8 @@
                   :to="{ name: item.name }"
                   >{{ item.label }}</router-link
                 >
-
-                <!-- <router-link :to="{name:'label'}" class="nav-link active">
-                  {{label}}
-                 </router-link> -->
-                <!-- <router-link :to="{ name: 'home' }" class="nav-link active">
-                  Home
-                </router-link> -->
-                <!-- <a
-                  class="nav-link active text-primary fs-2"
-                  aria-current="page"
-                  href="#"
-                  >Home</a> -->
               </li>
-              <!-- <li class="nav-item">
-                <router-link :to="{ name: 'projects' }" class="nav-link">
-                  Projects
-                </router-link> -->
-                <!-- <a class="nav-link fs-2 text-primary" href="#">Projects</a> -->
-              <!-- </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link fs-2 text-primary" href="#">Technologies</a>
-              </li> -->
+              
             </ul>
           </div>
         </div>
