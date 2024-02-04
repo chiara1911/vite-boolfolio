@@ -1,5 +1,5 @@
 <template>
-  <section id="head">
+  <section id="head ">
     <div class="container">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -45,14 +45,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section {
-  background-image: url(../../assets/img/jumbo-1.jpeg);
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-  //     background-color: red;
-}
-img {
-  width: 100%;
-}
+// section {
+//   background-image: url(../../assets/img/jumbo-1.jpeg);
+//   height: 400px;
+//   width: 100%;
+//   object-fit: cover;
+  
+// }
+// img {
+//   width: 100%;
+// }
 </style>
