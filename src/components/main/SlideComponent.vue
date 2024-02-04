@@ -1,8 +1,7 @@
 <template>
-  <carousel class="mt-3">
+  <carousel class="mt-3 ">
     <slide v-for="project in projects" :key="project.id">
-      <ProjectCard :project="project" />
-      
+      <ProjectCard :project="project" />      
     </slide>
   </carousel>
 </template>
@@ -44,9 +43,8 @@ export default {
 img {
   width: 180px;
   object-fit: contain;
+  height: 150px;
 }
 
-#slider {
-  height: 380px;
-}
+
 </style>

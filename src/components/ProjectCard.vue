@@ -1,23 +1,18 @@
 <template>
-  <div class="container">
-    
+  <div class="container ">
     <div class="row">
-      <div class="col-7">
+      <div class="col-4">
         <img :src="project.image" :alt="project.title" />
       </div>
       <div class="col-5">
-        <router-link :to="{name: 'single-project', params:{slug:project.slug}}">
-            <p>{{ project.title }}</p>
+        <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">
+          <p>{{ project.title }}</p>
         </router-link>
-        
-        <p>{{ project.description }}</p>
-
+        <p class="">{{ project.description }}</p>
         <a href="#">{{ project.link }}</a>
       </div>
     </div>
   </div>
- 
-  <!-- <p >progetto {{ project.title }}</p> -->
 </template>
 
 <script>
@@ -29,11 +24,11 @@ export default {
   data() {
     return {
       store,
-     
+
     };
   },
   props: ["project"],
-  
+
   components: {
 
   },
@@ -54,4 +49,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+  width: 200px;
+}
+</style>
